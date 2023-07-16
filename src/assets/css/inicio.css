@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)  ;
+    width: 100%;
+    align-items: center;
+}
+
+.container-imagen-realizamos{
+    display: flex;
+    width: 15rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding-left: 7.5rem;
+}
+.imagen-realizamos{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-imagen-realizamos{
+        padding-right: 7.5rem;
+    }
+}

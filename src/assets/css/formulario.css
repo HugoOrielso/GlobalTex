@@ -1,0 +1,46 @@
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+form{
+    width: 30em;
+    display: flex;
+    padding: 2em ;
+    gap: 1em;
+    flex-flow: column nowrap;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    align-items: center;
+    justify-content: center;
+}
+.input-form{
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 1em;
+    outline: none;
+    padding: 1em .3em;
+    background-color: #e5e5e5;
+    border-radius: 1em;
+
+}
+
+.input-enviar{
+    width: 15em;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.input-enviar:hover{
+    background:  #3866f2;
+}
+
+@media screen and (max-width:800px) {
+  
+}

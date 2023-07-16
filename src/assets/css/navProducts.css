@@ -1,0 +1,66 @@
+.nav-categorías--procuts{
+    display: flex;
+    background-color: #161618;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.cabecera-ul--products{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 2.6em;
+    list-style: none;
+    margin-top: 1em;
+}
+.title-nav-products{
+    font-size: 2em;
+}
+.item-produts{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.link-products{
+    color: #000;
+    box-shadow: 4px 20px 25px -5px rgba(0, 0, 0, 0.30),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    font-weight: bold;
+    padding: 1em;
+    transition: all .5s ease;
+}
+.link-products:hover{
+    transform: scale(1.1);
+}
+.link-products::after{
+    transform: scale(1.1);
+}
+
+.active-link--products{
+    border: thin solid #000;
+    font-weight: bold;
+    background-color: #000;
+}
+
+.link--products.active-link--products {
+    border: thin solid #000;
+    font-weight: bold;
+    background-color: #000; 
+}
+
+@media screen and (max-width:700px) {
+    .cabecera-ul--products{
+        gap: 1em;
+    }
+    .link-products{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2em;
+        padding: 1em;
+    }
+}

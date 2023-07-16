@@ -1,0 +1,86 @@
+.nosotros{
+    overflow: hidden;
+    margin-bottom: 5em;
+}
+.mision-vision{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em;
+    position: relative;
+    z-index: 2;
+    padding: 2em;
+    border: 2px solid #f1f1f1;
+    border-radius: 2em;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.blur-decoracion{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 80%;
+    width: 300px;
+    height: 300px;
+    filter: blur(80px);
+    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), #4c00ff00);
+    opacity: .4;
+}
+.blur-decoracionDos{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 12%;
+    width: 400px;
+    height: 400px;
+    -webkit-filter: blur(80px);
+    filter: blur(80px);
+    background: radial-gradient(circle at 50% 50%, #444bf7, #444bf700);
+    opacity: .4;
+
+}
+.mision{
+    display: flex;
+    width: 50%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    z-index: 2;
+}
+.vision{
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.mapa{
+    padding: 3em;
+    align-items: center;
+    justify-content: center;
+}
+.render-mapa{
+    width: 80%;
+}
+
+@media screen and (max-width:800px) {
+    .mision-vision{
+        flex-flow: column nowrap;
+        height: 30em;
+    }
+    .vision{
+        width: 100%;
+    }
+    .mision{
+        width: 100%;
+    }
+    .render-mapa{
+        width: 100%;
+    }
+}

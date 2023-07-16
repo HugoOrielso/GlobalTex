@@ -1,0 +1,80 @@
+.footer{
+    padding: 1em;
+    background-color: #0a141d;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+}
+.instagram, .facebook {
+    color: white;
+}
+.email-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+}
+.email{
+    display: flex;
+    color: white;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.number{
+    display: flex;
+    color: white;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.logo-global{
+ width: 70%;
+ object-fit: cover;
+}
+.footer-redes > a{
+    transition: all .5s ease;
+}
+.footer-redes > a:hover{
+    transform: scale(1.1);
+}
+.footer-redes{
+    display: flex;  
+    flex-flow: column nowrap;
+    align-items: center ;
+    justify-content: center;
+    padding-top: 2em;
+}
+.logos{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.title-redes{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.title-contacto{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 800px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
